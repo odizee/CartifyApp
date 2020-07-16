@@ -1,0 +1,660 @@
+/*-----------------------------------FONTS----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/*-----------------------------------FONTS----------------------------------------------*/
+
+/*------------------------------GENERAL STYLING-----------------------------------------*/
+/***************LOADING EFFECT*********************/
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #FF9000;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+    
+}
+
+.loader:before{
+    animation-delay: .5s;
+
+}
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+        
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/*****************CONTENT*******************/
+
+/***************GENERAL STYLING*********************/
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    font-family: Roboto;
+    
+
+}
+
+p {
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 59px;
+    text-align: center;
+
+    color: #222222;
+}
+
+hr {
+    background-color: #FF9000;
+}
+
+.top-hr {
+    width: 30vw !important;
+}
+
+/***************NAV*********************/
+.navbar-brand {
+    overflow-x: hidden
+}
+
+
+/***************BANNER*********************/
+.banner {
+    background-image: url(../assets/Images/unsplash.png);
+    background-position: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.banner::before {
+    background: linear-gradient(269.41deg, #1B2A35 0.6%, rgba(27, 42, 53, 0) 96.9%);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+/***************COUNTDOWN EFFECT*********************/
+.counter p{
+    font-size: 18px;
+    font-family: Montserrat;
+} 
+
+.counter h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6vh;
+    color: #222222;
+}
+
+.counter h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FF9000;
+}
+/*********CARD BOX TEXT*********/
+.policy{
+    font-size: 13px;
+    font-family: Montserrat;
+}
+
+.card {
+    position: relative;
+    background: #F8F8FF;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.58);
+    top: -40px
+}
+
+
+/*********CARD FORM*********/
+.btn {
+    background-color: #FF9000;
+    width: 10vw; 
+    height: 8vh;
+    border: none; 
+}
+
+.btn-primary:hover {
+    background-color: #ff7700 !important;
+}
+
+.btn.focus, .btn:focus, .btn:active {
+    outline: 0;
+    box-shadow: none !important;
+    color: aliceblue !important;
+}
+
+.form-control {
+    border: 1px solid #FF9000;
+    border-radius: 1px;
+    width: 20vw !important;
+    height: 8vh;
+    
+}
+
+.form-control:focus{
+    border-color: #ff7700;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*****************PHONE IMAGE STYLE**********************/
+
+.ph-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    place-items: center;
+}
+
+
+.img-app {
+    width: 60%;
+    height: 90%;
+    margin-left: 7vw;
+
+}
+
+/***************SWEET ALERT*********************/
+.sweet-alert-button:hover {
+    background: black !important;
+}
+
+
+
+
+
+
+/*
+.ph-img img {
+    width: auto;
+    height: 507px;
+    margin-left: 8vw;
+    
+}
+*/
+/***************STEPS TO USE SECTION*********************/
+.step {
+    background-color: #E5E5E5 !important;
+    padding: 15vh !important;
+    
+}
+
+.step-h h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+
+.step-h p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.pages {
+    margin-top: 15vh
+}
+
+/**********GREAT WISH TEXT**********/
+.great-wish{
+position: relative;
+font-family: Great Wishes;
+font-style: normal;
+font-weight: normal;
+font-size: 9vw;
+line-height:;
+color: #FF9000;
+opacity: 0.2;
+left: 20px
+
+}
+
+/*********STEPS TEXT************/
+.bd-highlight h2{
+    font-size: 1.3rem;
+    line-height: 20px;
+    margin-top: 60px !important;    
+}
+
+
+
+/***************WATCH VIDEO SECTION*********************/
+.watch {
+    margin-bottom: 5vh;
+}
+
+.video {
+    width: 70%;
+    height: 80vh;
+}
+
+
+iframe {
+    width: 100%;
+    height: 90%;
+}
+
+/******WATCH VIDEO BACKGROUND******/
+.good {
+    background: #E9E8E1 !important;
+    
+}
+
+
+/***************SECOND COUNT DOWN*********************/
+.counter-2 {
+    margin: auto;
+    font-size: 40px;
+    width: 35vw !important;
+}
+
+.counter-2 h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 88px;
+    color: #222222;
+
+}
+
+
+/**********SECOND COUNT DOWN BACKGROUND************/
+
+.background-2 {
+    background-image: url(../assets/Images/CARTIFY-logo%202.png);
+    background-position: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+}
+
+.background-2::before {
+    background: #E9E8E1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .2
+}
+
+.card-2{
+    height: 100%;
+    background: #F8F8FF;
+    box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.58);
+}
+
+.background-2 p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+}
+
+.background-2 h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FF9000;
+
+}
+.background-2 h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 88px;
+}
+
+
+/******SECOND FORM******/
+
+
+.form-b {
+    margin: 20 auto;
+}
+
+.form-c-2 {
+    width: 42vh !important;
+}
+
+ .button-2 {
+        width: 20vw;
+    }
+
+.policy a {
+    color: #222222; !important;
+    text-decoration: underline;
+}
+
+.connect {
+    background: #E9E8E1;
+    height: 60vh
+}
+
+.copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*****************************MEDIA QUERIES*************************/
+
+
+@media only screen and (max-width: 1199px) {
+    .card h5{
+    font-size: 0.84rem;
+    max-width: 100px;
+    width: 60px; 
+    }
+    
+    .counter-2 {
+        width: 45vw !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    
+    
+    
+    h1{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+.card h4{
+    font-size: 1.8rem
+    
+    } 
+    
+.card h5{
+    font-size: 0.84rem;
+    max-width: 100px;
+    width: 60px;
+  
+    
+    }
+    .card p {
+        font-size: 14px;
+        width: 110%
+    }
+    
+    .ph-img {
+    position: relative;
+    min-width: 50%;
+    min-height: 100%;
+    place-items: center;
+}
+
+
+.img-app {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.form-c-top {
+    width: 27vw !important;
+    height: 8vh;    
+}
+.btn-top {
+    margin-top: 10px;
+    width: 27vw !important;
+    height: 8vh; 
+    
+}
+    
+
+ .button-2 {
+        width: 20vw;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
+.form-c-top {
+    width: 79vh !important;
+    height: 8vh;    
+}
+.btn-top {
+    margin-top: 10px;
+    width: 79vh !important;
+    height: 8vh; 
+    
+}
+    
+.card h5{
+    font-size: 0.84rem;
+    max-width: 100px;
+    width: 100%;
+  
+    
+    }
+
+    .app-display {
+        text-align: center !important;
+        margin-right: ;
+         
+    }
+    
+    .app-display h2, .app-display p {
+        text-align: end !important;
+
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 555px) {
+    
+.card h4{
+    font-size: 1.8rem
+    
+    } 
+.card h5{
+    font-size: 1rem;
+    
+    
+    }
+    .card p {
+        font-size: 14px;
+        width: 110%
+    }
+    
+.form-c-top {
+    width: 45vw !important;
+    height: 8vh;    
+}
+.btn-top {
+    margin-top: -20px;
+    width: 20vh !important;
+    height: 8vh; 
+    
+}
+    
+
+ .button-2 {
+        margin-top: -3vh;
+        width: 20vw;
+        font-size: .8rem;
+    }
+.video {
+    width: 80%;
+    height: 65vh;
+}
+
+
+video {
+    width: 100%;
+    height: 90%;
+}
+  
+}
+
+ @media only screen and (max-width: 465px) {
+     
+.card h5{
+    font-size: 0.75rem;
+    max-width: 100px;
+    
+    }
+
+.form-c-top {
+    width: 78vw !important;
+    height: 8vh;    
+}
+.btn-top {
+    margin-top: -0px;
+    width: 78vw !important;
+    height: 8vh; 
+    
+}
+
+
+ .button-2 {
+        position: relative;
+        text-align: center;
+        margin-top: 2vh;
+        width: 50vw;
+        font-size: 1rem;
+        margin: 0 auto;
+        left: -1vw;
+        
+    }
+       
+}
+    
+ @media only screen and (max-width: 395px) {
+     
+.card{
+         width: 100%
+     } 
+.form-c-top {
+    width: 63vw !important;
+    height: 8vh;    
+}
+.btn-top {
+    margin-top: -0px;
+    width: 63vw !important;
+    height: 8vh; 
+    
+}    
+     
+.card h5{
+    position: relative;
+    font-size: 0.5rem;
+    width: 20vw;
+    left: -5vw;
+    
+    }
+     
+.button-2 {
+    position: relative;
+    text-align: center;
+    margin-top: 2vh;
+    width: 65vw;
+    font-size: 1rem;
+    margin: 0 auto;
+    left: -1vw;
+        
+    }
+.navbar-b {
+    width: 10px;
+    height: vh;
+}
+
+
+.navbar-brand {
+    width: 100%;
+    height: 10%;
+}
+     
+    .connect {
+    height: 80vh
+}
+     
+}
+    
