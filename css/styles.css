@@ -1,11 +1,7 @@
 /*-----------------------------------FONTS----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/***********Greatwishes Font*************/
-@font-face {
-    font-family: (Greatwishes);
-    src: url(Great%20Wishes.otf);
-}
+
 
 
 /*-----------------------------------FONTS----------------------------------------------*/
@@ -68,15 +64,16 @@
 /*****************CONTENT*******************/
 
 /***************GENERAL STYLING*********************/
-html, *, body {
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     max-width: 1440px;
     font-family: Roboto;
-}
+    
 
+}
 
 p {
     font-family: Roboto;
@@ -156,33 +153,16 @@ hr {
     color: #FF9000;
 }
 /*********CARD BOX TEXT*********/
-.l-u{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 22px;
-    color: #222222;
-    opacity: 0.6;
-
-}
-
 .policy{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
-    line-height: 16px;
-    color: #222222;
-    opacity: 0.6;
+    font-family: Montserrat;
 }
 
 .card {
     position: relative;
     background: #F8F8FF;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.58);
-    top: -40px;
-    overflow-x: hidden;
+    top: -40px
 }
 
 
@@ -191,8 +171,7 @@ hr {
     background-color: #FF9000;
     width: 10vw; 
     height: 8vh;
-    border: none;
-    color: #222222
+    border: none; 
 }
 
 .btn-primary:hover {
@@ -231,9 +210,8 @@ hr {
 
 .img-app {
     width: 60%;
-    height: 95%;
+    height: 90%;
     margin-left: 7vw;
-    overflow-x: hidden
 
 }
 
@@ -241,6 +219,7 @@ hr {
 .sweet-alert-button:hover {
     background: black !important;
 }
+
 
 /***************STEPS TO USE SECTION*********************/
 .step {
@@ -273,14 +252,14 @@ hr {
 /**********GREAT WISH TEXT**********/
 .great-wish{
 position: relative;
-font-family: (Greatwishes);
+font-family: Great Wishes;
 font-style: normal;
 font-weight: normal;
 font-size: 9vw;
 line-height:;
 color: #FF9000;
 opacity: 0.2;
-left: 20px;
+left: 20px
 
 }
 
@@ -296,6 +275,7 @@ left: 20px;
 /***************WATCH VIDEO SECTION*********************/
 .watch {
     margin-bottom: 5vh;
+    
 }
 
 .video {
@@ -401,11 +381,11 @@ iframe {
 }
 
 .form-c-2 {
-    width: 44vh !important;
+    width: 42vh !important;
 }
 
  .button-2 {
-        width: 10vw;
+        width: 20vw;
     }
 
 .policy a {
@@ -415,10 +395,8 @@ iframe {
 
 .connect {
     background: #E9E8E1;
-    overflow: hidden
+    height: 66vh
 }
-
-
 
 .copyright {
     font-family: Roboto;
@@ -506,12 +484,12 @@ iframe {
 
 
 .form-c-top {
-    width: 85vh !important;
+    width: 79vh !important;
     height: 8vh;    
 }
 .btn-top {
     margin-top: 10px;
-    width: 85vh !important;
+    width: 79vh !important;
     height: 8vh; 
     
 }
@@ -568,7 +546,7 @@ iframe {
     
 
  .button-2 {
-        margin-top: -3vw;
+        margin-top: -3vh;
         width: 20vw;
         font-size: .8rem;
     }
@@ -615,6 +593,13 @@ video {
         left: -1vw;
         
     }
+     
+    iframe {
+    width: 100%;
+    height: 80%;
+}
+ 
+
        
 }
     
@@ -624,12 +609,12 @@ video {
          width: 100%
      } 
 .form-c-top {
-    width: 73vw !important;
+    width: 63vw !important;
     height: 8vh;    
 }
 .btn-top {
     margin-top: -0px;
-    width: 73vw !important;
+    width: 63vw !important;
     height: 8vh; 
     
 }    
@@ -663,20 +648,27 @@ video {
     height: 10%;
 }
      
-
-     
- .bd-highlight h2 {
-     text-align: center;
-     width: 50vw;
- }
-     
-.bd-highlight p {
-     text-align: center;
-     width: 70vw;
-    margin: 0 -40px
-    
- }
-
-     
+    .connect {
+    height: 80vh
 }
-    
+     
+.bd-highlight p{
+         font-size: 16px;
+     }
+     
+.step-h h2{
+    font-size: 30px;
+    line-height: normal;
+}
+     
+.step-h p{
+    line-height: normal;
+    font-size: 22px;
+   
+}
+
+    iframe {
+    width: 100%;
+    height: 65%;
+}
+ 
